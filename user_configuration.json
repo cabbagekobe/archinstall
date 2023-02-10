@@ -41,7 +41,7 @@
         "xclip"
     ],
     "profile": {
-        "path": "/usr/lib/python3.10/site-packages/archinstall/profiles/minimal.py"
+        "path": "/usr/lib/python3.10/site-packages/archinstall/profiles/i3.py"
     },
     "script": "guided",
     "silent": false,
