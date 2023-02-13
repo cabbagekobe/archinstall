@@ -1,6 +1,8 @@
 {
     "config_version": "2.5.1",
     "debug": false,
+    "desktop-environment": "i3",
+    "gfx_driver": "Intel (open-source)",
     "harddrives": [
         "/dev/sda"
     ],
@@ -16,7 +18,7 @@
     "no_pkg_lookups": false,
     "offline": false,
     "profile": {
-        "path": "/usr/lib/python3.10/site-packages/archinstall/profiles/minimal.py"
+        "path": "/usr/lib/python3.10/site-packages/archinstall/profiles/desktop.py"
     },
     "script": "guided",
     "silent": false,
