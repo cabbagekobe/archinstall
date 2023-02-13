@@ -1,11 +1,9 @@
 {
-    "audio": "pulseaudio",
     "config_version": "2.5.1",
     "debug": false,
     "harddrives": [
         "/dev/sda"
     ],
-    "hostname": "x270-arch",
     "keyboard-layout": "jp106",
     "nic": {
         "dhcp": true,
@@ -17,35 +15,12 @@
     },
     "no_pkg_lookups": false,
     "offline": false,
-    "packages": [
-        "vim",
-        "git",
-        "neofetch",
-        "noto-fonts",
-        "noto-fonts-cjk",
-        "noto-fonts-extra",
-        "noto-fonts-emoji",
-        "ranger",
-        "openssh",
-        "filezilla",
-        "jq",
-        "mpv",
-        "ripgrep",
-        "youtube-dl",
-        "lsof",
-        "w3m",
-        "fcitx5-im",
-        "fcitx5-mozc",
-        "fcitx5-configtool",
-        "neovim",
-        "xclip"
-    ],
     "profile": {
         "path": "/usr/lib/python3.10/site-packages/archinstall/profiles/minimal.py"
     },
     "script": "guided",
     "silent": false,
-    "sys-language": "en_US",
+    "swap": false,
     "timezone": "Asia/Tokyo",
     "version": "2.5.1"
 }
