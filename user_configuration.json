@@ -72,9 +72,15 @@
         "flameshot",
         "docker"
     ],
+    "custom-commands": [
+        "cd /home/cabbagekobe; git clone https://aur.archlinux.org/paru.git",
+        "cd /paru; makepkg -si"
+    ],
     "script": "guided",
     "silent": false,
     "swap": false,
+    "sys-encoding": "UTF-8",
+    "sys-language": "en_US",
     "timezone": "Asia/Tokyo",
     "version": "2.5.1"
 }
