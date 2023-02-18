@@ -73,8 +73,8 @@
         "docker"
     ],
     "custom-commands": [
-        "cd /home/cabbagekobe; git clone https://aur.archlinux.org/paru.git",
-        "cd /home/cabbagekobe/paru; makepkg -si"
+        "cd /tmp; git clone https://aur.archlinux.org/paru.git",
+        "cd /tmp/paru; makepkg -si"
     ],
     "script": "guided",
     "silent": false,
