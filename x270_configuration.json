@@ -3,6 +3,7 @@
     "audio": "pipewire",
     "debug": false,
     "bootloader": "systemd-bootctl",
+    "host-name": "x270-arch",
     "keyboard-layout": "jp106",
     "harddrives": [
         "/dev/sda"
@@ -53,7 +54,15 @@
     ],
     "custom-commands": [
       "mkdir /home/cabbagekobe/.ssh",
-      "curl https://github.com/cabbagekobe.keys >> /home/cabbagekobe/.ssh/authorized_keys"
+      "curl https://github.com/cabbagekobe.keys >> /home/cabbagekobe/.ssh/authorized_keys",
+
+      "touch /home/cabbagekobe/.xprofile",
+      "echo 'export GTK_IM_MODULE=fcitx' >> /home/cabbagekobe/.xprofile",
+      "echo 'export QT_IM_MODULE=fcitx' >> /home/cabbagekobe/.xprofile",
+      "echo 'export XMODIFIERS=@im=fcitx' >> /home/cabbagekobe/.xprofile"
+    ],
+    "services": [
+      "sshd"
     ],
     "script": "guided",
     "silent": false,
