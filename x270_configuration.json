@@ -34,17 +34,26 @@
         "path": "/usr/lib/python3.10/site-packages/archinstall/profiles/minimal.py"
     },
     "parallel downloads": 5,
-    "plugin" : "https://raw.githubusercontent.com/cabbagekobe/archinstall-aur/main/archinstall_aur/__init__.py",
     "packages": [
-        "terminator-git",
-        "jumpapp",
-        "postman-bin",
-        "zoom",
-        "slack-desktop",
-        "ngrok",
-        "github-cli"
+        "zsh", "git", "openssh", "wget", "neofetch", "htop", "w3m", "ranger", "jq", "ripgrep", "fzf", "lsof",
+        "vim", "neovim", "xclip",
+        "ffmpeg", "youtube-dl", "mpv", "imagemagick",
+        "xorg-server", "xorg-xinit", "xf86-video-intel", "mesa", "xdg-user-dirs",
+        "lightdm", "lightdm-gtk-greeter",
+        "noto-fonts", "noto-fonts-cjk", "noto-fonts-extra", "noto-fonts-emoji",
+        "tilix",
+        "openbox",
+        "nemo",
+        "rofi",
+        "polybar",
+        "fcitx5-im", "fcitx5-mozc", "fcitx5-configtool",
+        "filezilla", "flameshot",
+        "vivaldi", "vivaldi-ffmpeg-codecs",
+        "docker"
     ],
     "custom-commands": [
+      "mkdir /home/cabbagekobe/.ssh",
+      "curl https://github.com/cabbagekobe.keys >> /home/cabbagekobe/.ssh/authorized_keys"
     ],
     "script": "guided",
     "silent": false,
