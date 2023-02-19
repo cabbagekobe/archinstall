@@ -36,7 +36,13 @@
     "parallel downloads": 5,
     "plugin" : "https://raw.githubusercontent.com/cabbagekobe/archinstall-aur/main/archinstall_aur/__init__.py",
     "packages": [
-        "yay-bin"
+        "terminator-git",
+        "jumpapp",
+        "postman-bin",
+        "zoom",
+        "slack-desktop",
+        "ngrok",
+        "github-cli"
     ],
     "custom-commands": [
     ],
