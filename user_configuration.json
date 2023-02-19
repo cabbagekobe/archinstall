@@ -78,9 +78,7 @@
     "custom-commands": [
         "useradd -m -s /bin/bash tempbuilder",
         "echo 'tempbuilder ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/tempbuilder",
-        "su - tempbuilder",
-        "git clone https://aur.archlinux.org/paru.git && cd ./paru && makepkg -si",
-        "exit",
+        "su - tempbuilder -c 'git clone https://aur.archlinux.org/paru.git && cd ./paru && makepkg -si'",
         "rm /etc/sudoers.d/tempbuilder",
         "userdel tempbuilder",
         "paru -S visual-studio-code-bin dropbox github-cli google-chrome ngrok postman-bin"
