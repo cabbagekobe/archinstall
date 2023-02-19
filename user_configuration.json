@@ -36,7 +36,7 @@
     "parallel downloads": 5,
     "plugin" : "https://raw.githubusercontent.com/cabbagekobe/archinstall-aur/main/archinstall_aur/__init__.py",
     "packages": [
-        "paru-bin"
+        "yay-bin"
     ],
     "custom-commands": [
     ],
