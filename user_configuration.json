@@ -3,8 +3,12 @@
     "audio": "pipewire",
     "debug": false,
     "bootloader": "systemd-bootctl",
+    "keyboard-layout": "jp106",
     "harddrives": [
         "/dev/sda"
+    ],
+    "additional-repositories": [
+        "multilib"
     ],
     "mirror-region": {
         "Japan": {
@@ -16,10 +20,6 @@
             "https://mirrors.cat.net/archlinux/$repo/os/$arch": true
         }
     },
-    "additional-repositories": [
-        "multilib"
-    ],
-    "keyboard-layout": "jp106",
     "nic": {
         "dhcp": true,
         "dns": null,
@@ -33,15 +33,13 @@
     "profile": {
         "path": "/usr/lib/python3.10/site-packages/archinstall/profiles/minimal.py"
     },
-    "custom-commands": [
-        "useradd -s /bin/bash tempbuilder",
-        "echo 'tempbuilder ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/tempbuilder",
-        "pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && su - tempbuilder -c 'makepkg -si'",
-        "rm /etc/sudoers.d/tempbuilder",
-        "userdel tempbuilder",
-        "yay -S visual-studio-code-bin  spotify"
-    ],
     "parallel downloads": 5,
+    "plugin" : "https://raw.githubusercontent.com/cabbagekobe/archinstall-aur/main/archinstall_aur/__init__.py",
+    "packages": [
+        "paru"
+    ],
+    "custom-commands": [
+    ],
     "script": "guided",
     "silent": false,
     "swap": false,
