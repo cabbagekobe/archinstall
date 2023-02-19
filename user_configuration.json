@@ -73,12 +73,6 @@
         "docker"
     ],
     "custom-commands": [
-        "useradd -s /bin/bash tempbuilder",
-        "echo 'tempbuilder ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/tempbuilder",
-        "pacman -S --needed git base-devel && git clone https://aur.archlinux.org/paru.git && cd paru && su - tempbuilder -c 'makepkg -si'",
-        "rm /etc/sudoers.d/tempbuilder",
-        "userdel tempbuilder",
-        "paru -S visual-studio-code-bin dropbox github-cli google-chrome ngrok postman-bin"
     ],
     "script": "guided",
     "silent": false,
