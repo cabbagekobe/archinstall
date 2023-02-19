@@ -16,6 +16,9 @@
             "https://mirrors.cat.net/archlinux/$repo/os/$arch": true
         }
     },
+    "additional-repositories": [
+        "multilib"
+    ],
     "keyboard-layout": "jp106",
     "nic": {
         "dhcp": true,
@@ -73,7 +76,16 @@
         "docker"
     ],
     "custom-commands": [
+        "useradd -m -s /bin/bash tempbuilder",
+        "echo 'tempbuilder ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/tempbuilder",
+        "su - tempbuilder",
+        "git clone https://aur.archlinux.org/paru.git && cd ./paru && makepkg -si",
+        "exit",
+        "rm /etc/sudoers.d/tempbuilder",
+        "userdel tempbuilder",
+        "paru -S visual-studio-code-bin dropbox github-cli google-chrome ngrok postman-bin"
     ],
+    "parallel downloads": 5,
     "script": "guided",
     "silent": false,
     "swap": false,
