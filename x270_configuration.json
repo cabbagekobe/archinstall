@@ -39,7 +39,7 @@
         "zsh", "git", "openssh", "wget", "neofetch", "htop", "w3m", "ranger", "jq", "ripgrep", "fzf", "lsof",
         "vim", "neovim", "xclip",
         "ffmpeg", "youtube-dl", "mpv", "imagemagick",
-        "xorg-server", "xorg-xinit", "xf86-video-intel", "mesa", "xdg-user-dirs",
+        "xorg-server", "xorg-xinit", "xf86-video-intel", "mesa", "xdg-user-dirs", "arandr",
         "lightdm", "lightdm-gtk-greeter",
         "noto-fonts", "noto-fonts-cjk", "noto-fonts-extra", "noto-fonts-emoji",
         "tilix",
@@ -59,7 +59,15 @@
       "touch /home/cabbagekobe/.xprofile",
       "echo 'export GTK_IM_MODULE=fcitx' >> /home/cabbagekobe/.xprofile",
       "echo 'export QT_IM_MODULE=fcitx' >> /home/cabbagekobe/.xprofile",
-      "echo 'export XMODIFIERS=@im=fcitx' >> /home/cabbagekobe/.xprofile"
+      "echo 'export XMODIFIERS=@im=fcitx' >> /home/cabbagekobe/.xprofile",
+
+      "touch /home/cabbagekobe/.Xmodmap",
+      "echo 'clear lock' >> /home/cabbagekobe/.Xmodmap",
+      "echo 'clear control' >> /home/cabbagekobe/.Xmodmap",
+      "echo 'keycode 66 = Control_L' >> /home/cabbagekobe/.Xmodmap",
+      "echo 'add control = Control_L Control_R' >> /home/cabbagekobe/.Xmodmap",
+
+      "git clone --depth 1 https://github.com/wbthomason/packer.nvim /home/cabbagekobe/.local/share/nvim/site/pack/packer/start/packer.nvim"
     ],
     "services": [
       "sshd"
