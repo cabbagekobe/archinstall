@@ -67,10 +67,12 @@
       "echo 'keycode 66 = Control_L' >> /home/cabbagekobe/.Xmodmap",
       "echo 'add control = Control_L Control_R' >> /home/cabbagekobe/.Xmodmap",
 
-      "git clone --depth 1 https://github.com/wbthomason/packer.nvim /home/cabbagekobe/.local/share/nvim/site/pack/packer/start/packer.nvim"
+      "git clone --depth 1 https://github.com/wbthomason/packer.nvim /home/cabbagekobe/.local/share/nvim/site/pack/packer/start/packer.nvim",
+      "git clone https://github.com/cabbagekobe/archconfig.git /home/cabbagekobe/"
     ],
     "services": [
-      "sshd"
+      "sshd",
+      "lightdm"
     ],
     "script": "guided",
     "silent": false,
