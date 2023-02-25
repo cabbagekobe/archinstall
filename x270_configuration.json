@@ -51,24 +51,24 @@
         "docker"
     ],
     "custom-commands": [
-      "mkdir /home/cabbagekobe/.ssh",
-      "curl https://github.com/cabbagekobe.keys >> /home/cabbagekobe/.ssh/authorized_keys",
+      "sudo -u cabbagekobe mkdir /home/cabbagekobe/.ssh",
+      "sudo -u cabbagekobe curl https://github.com/cabbagekobe.keys >> /home/cabbagekobe/.ssh/authorized_keys",
 
-      "touch /home/cabbagekobe/.xprofile",
-      "echo 'export GTK_IM_MODULE=fcitx' >> /home/cabbagekobe/.xprofile",
-      "echo 'export QT_IM_MODULE=fcitx' >> /home/cabbagekobe/.xprofile",
-      "echo 'export XMODIFIERS=@im=fcitx' >> /home/cabbagekobe/.xprofile",
+      "sudo -u cabbagekobe touch /home/cabbagekobe/.xprofile",
+      "sudo -u cabbagekobe echo 'export GTK_IM_MODULE=fcitx' >> /home/cabbagekobe/.xprofile",
+      "sudo -u cabbagekobe echo 'export QT_IM_MODULE=fcitx' >> /home/cabbagekobe/.xprofile",
+      "sudo -u cabbagekobe echo 'export XMODIFIERS=@im=fcitx' >> /home/cabbagekobe/.xprofile",
 
-      "touch /home/cabbagekobe/.Xmodmap",
-      "echo 'clear lock' >> /home/cabbagekobe/.Xmodmap",
-      "echo 'clear control' >> /home/cabbagekobe/.Xmodmap",
-      "echo 'keycode 66 = Control_L' >> /home/cabbagekobe/.Xmodmap",
-      "echo 'add control = Control_L Control_R' >> /home/cabbagekobe/.Xmodmap",
+      "sudo -u cabbagekobe touch /home/cabbagekobe/.Xmodmap",
+      "sudo -u cabbagekobe echo 'clear lock' >> /home/cabbagekobe/.Xmodmap",
+      "sudo -u cabbagekobe echo 'clear control' >> /home/cabbagekobe/.Xmodmap",
+      "sudo -u cabbagekobe echo 'keycode 66 = Control_L' >> /home/cabbagekobe/.Xmodmap",
+      "sudo -u cabbagekobe echo 'add control = Control_L Control_R' >> /home/cabbagekobe/.Xmodmap",
 
-      "git clone --depth 1 https://github.com/wbthomason/packer.nvim /home/cabbagekobe/.local/share/nvim/site/pack/packer/start/packer.nvim",
+      "sudo -u cabbagekobe git clone --depth 1 https://github.com/wbthomason/packer.nvim /home/cabbagekobe/.local/share/nvim/site/pack/packer/start/packer.nvim",
 
-      "git clone https://github.com/cabbagekobe/archconfig.git /home/cabbagekobe/tmp_config",
-      "rsync -a /home/cabbagekobe/tmp_config/ /home/cabbagekobe/"
+      "sudo -u cabbagekobe git clone https://github.com/cabbagekobe/archconfig.git /home/cabbagekobe/tmp_config",
+      "sudo -u cabbagekobe rsync -a /home/cabbagekobe/tmp_config/ /home/cabbagekobe/"
     ],
     "services": [
       "sshd",
