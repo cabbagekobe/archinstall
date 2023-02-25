@@ -36,12 +36,11 @@
     },
     "parallel downloads": 5,
     "packages": [
-        "zsh", "git", "openssh", "wget", "neofetch", "htop", "w3m", "ranger", "jq", "ripgrep", "fzf", "lsof", "rsync",
+        "git", "openssh", "wget", "rsync",
         "vim", "neovim", "xclip",
         "ffmpeg", "youtube-dl", "mpv", "imagemagick",
         "xorg-server", "xorg-xinit", "xf86-video-intel", "mesa", "xdg-user-dirs", "arandr",
         "lightdm", "lightdm-gtk-greeter",
-        "noto-fonts", "noto-fonts-cjk", "noto-fonts-extra", "noto-fonts-emoji",
         "tilix",
         "openbox",
         "nemo",
@@ -49,7 +48,6 @@
         "polybar",
         "fcitx5-im", "fcitx5-mozc", "fcitx5-configtool",
         "filezilla", "flameshot",
-        "vivaldi", "vivaldi-ffmpeg-codecs",
         "docker"
     ],
     "custom-commands": [
@@ -67,7 +65,10 @@
       "echo 'keycode 66 = Control_L' >> /home/cabbagekobe/.Xmodmap",
       "echo 'add control = Control_L Control_R' >> /home/cabbagekobe/.Xmodmap",
 
-      "git clone --depth 1 https://github.com/wbthomason/packer.nvim /home/cabbagekobe/.local/share/nvim/site/pack/packer/start/packer.nvim"
+      "git clone --depth 1 https://github.com/wbthomason/packer.nvim /home/cabbagekobe/.local/share/nvim/site/pack/packer/start/packer.nvim",
+
+      "git clone https://github.com/cabbagekobe/archconfig.git /home/cabbagekobe/tmp_config",
+      "rsync -a /home/cabbagekobe/tmp_config/ /home/cabbagekobe/"
     ],
     "services": [
       "sshd",
