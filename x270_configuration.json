@@ -51,7 +51,7 @@
         "filezilla", "flameshot",
         "vivaldi", "vivaldi-ffmpeg-codecs",
         "docker",
-        "obconf", "lxappearance-obconf",
+        "obconf", "lxappearance-obconf"
     ],
     "custom-commands": [
       "sudo -u cabbagekobe mkdir /home/cabbagekobe/.ssh",
