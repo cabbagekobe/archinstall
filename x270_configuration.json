@@ -50,7 +50,8 @@
         "fcitx5-im", "fcitx5-mozc", "fcitx5-configtool",
         "filezilla", "flameshot",
         "vivaldi", "vivaldi-ffmpeg-codecs",
-        "docker"
+        "docker",
+        "obconf", "lxappearance-obconf",
     ],
     "custom-commands": [
       "sudo -u cabbagekobe mkdir /home/cabbagekobe/.ssh",
@@ -58,8 +59,8 @@
 
       "sudo -u cabbagekobe git clone --depth 1 https://github.com/wbthomason/packer.nvim /home/cabbagekobe/.local/share/nvim/site/pack/packer/start/packer.nvim",
 
-      "sudo -u cabbagekobe git clone https://github.com/cabbagekobe/archconfig.git /home/cabbagekobe/tmp_config",
-      "sudo -u cabbagekobe rsync -a /home/cabbagekobe/tmp_config/ /home/cabbagekobe/"
+      "sudo -u cabbagekobe git clone https://github.com/cabbagekobe/archconfig.git /home/cabbagekobe/archconfig",
+      "sudo -u cabbagekobe rsync -a /home/cabbagekobe/archconfig/ /home/cabbagekobe/"
     ],
     "services": [
       "sshd",
