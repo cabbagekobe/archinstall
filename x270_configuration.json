@@ -40,7 +40,7 @@
         "vim", "neovim", "xclip",
         "ffmpeg", "youtube-dl", "mpv", "imagemagick",
         "xorg-server", "xorg-xinit", "xf86-video-intel", "mesa", "xdg-user-dirs",
-        "arandr", "xorg-xbacklight", "pamixer",
+        "arandr", "xorg-xbacklight", "pamixer", "xcape", "picom", "dunst",
         "lightdm", "lightdm-gtk-greeter",
         "noto-fonts", "noto-fonts-cjk", "noto-fonts-extra", "noto-fonts-emoji",
         "alacritty",
