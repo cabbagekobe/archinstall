@@ -38,18 +38,22 @@
     "packages": [
         "zsh", "git", "openssh", "wget", "neofetch", "htop", "w3m", "ranger", "jq", "ripgrep", "fzf", "lsof", "rsync",
         "vim", "neovim", "xclip",
-        "ffmpeg", "youtube-dl", "mpv", "imagemagick",
+        "ffmpeg", "streamlink", "youtube-dl", "mpv", "imagemagick",
         "xorg-server", "xorg-xinit", "xf86-video-intel", "mesa", "xdg-user-dirs",
         "arandr", "xorg-xbacklight", "pamixer", "xcape", "picom", "dunst",
         "lightdm", "lightdm-gtk-greeter",
+        "network-manager-applet",
         "noto-fonts", "noto-fonts-cjk", "noto-fonts-extra", "noto-fonts-emoji",
         "alacritty",
-        "openbox", "nemo", "rofi", "polybar",
+        "openbox", "thunar", "rofi", "polybar", "gpicview",
         "fcitx5-im", "fcitx5-mozc", "fcitx5-configtool",
         "filezilla", "flameshot",
         "vivaldi", "vivaldi-ffmpeg-codecs",
-        "docker",
-        "obconf", "lxappearance-obconf", "pavucontrol"
+        "obconf", "lxappearance-obconf", "pavucontrol",
+        "linux-headers", "virtualbox-host-dkms", "vagrant",
+        "docker", "docker-compose",
+        "nodejs", "npm",
+        "go"
     ],
     "custom-commands": [
       "sudo -u cabbagekobe mkdir /home/cabbagekobe/.ssh",
@@ -58,10 +62,12 @@
       "sudo -u cabbagekobe git clone --depth 1 https://github.com/wbthomason/packer.nvim /home/cabbagekobe/.local/share/nvim/site/pack/packer/start/packer.nvim",
 
       "sudo -u cabbagekobe git clone https://github.com/cabbagekobe/archconfig.git /home/cabbagekobe/archconfig",
-      "sudo -u cabbagekobe rsync -a /home/cabbagekobe/archconfig/ /home/cabbagekobe/"
+      "sudo -u cabbagekobe rsync -a /home/cabbagekobe/archconfig/ /home/cabbagekobe/",
+      "sudo -u cabbagekobe usermod -aG docker cabbagekobe"
     ],
     "services": [
       "sshd",
+      "docker",
       "lightdm"
     ],
     "script": "guided",
